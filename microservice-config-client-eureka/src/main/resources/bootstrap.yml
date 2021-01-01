@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: microservice-config-server-eureka
+      username: user
+      password: password123
+  #      uri: http://localhost:8080
+#      profile: dev
+#      label: master       # 当 configserver 的后端存储是 Git 时，默认就是 master
+  application:
+    name: microservice-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true

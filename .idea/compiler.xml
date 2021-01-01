@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-config-client-authc" />
+        <module name="microservice-config-client-eureka" />
+        <module name="microservice-config-server-encrypt" />
+        <module name="microservice-config-server-encrypt-authc" />
+        <module name="microservice-config-server-encrypt-rsa" />
+        <module name="microservice-config-server-eureka" />
+        <module name="microserviceconfigclient" />
+        <module name="microserviceconfigserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-config-client" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservice-config-client" options="-parameters" />
+      <module name="microservice-config-client-authc" options="-parameters" />
+      <module name="microservice-config-client-eureka" options="-parameters" />
+      <module name="microservice-config-server-encrypt" options="-parameters" />
+      <module name="microservice-config-server-encrypt-authc" options="-parameters" />
+      <module name="microservice-config-server-encrypt-rsa" options="-parameters" />
+      <module name="microservice-config-server-eureka" options="-parameters" />
+      <module name="microserviceconfigclient" options="-parameters" />
+      <module name="microserviceconfigserver" options="-parameters" />
+    </option>
+  </component>
+</project>
