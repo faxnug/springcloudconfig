@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: dev
+      label: master       # 当 configserver 的后端存储是 Git 时，默认就是 master
+  application:
+    name: microservice-config-client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
